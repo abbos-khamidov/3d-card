@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    /* background-color: lightblue; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* transition: all 0.5s ease; */
+    transform-style: preserve-3d;
+    min-height: 90vh;
+    width: 50rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+}
+
+.sneaker img {
+    width: 19rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 17rem;
+    height: 17rem;
+    background: linear-gradient(
+        to right,
+        #f01c18bf,
+        #144372bf
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info {
+    width: 100%;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #144372bf;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes button {
+    padding: 0.5rem 1.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #f01c18bf;
+}
+
+button.active {
+    background: #f01c18bf;
+    color: #fff;
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: #f01c18bf;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
